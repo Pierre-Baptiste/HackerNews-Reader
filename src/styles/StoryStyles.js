@@ -24,13 +24,14 @@ export const StoryTitle = styled.h1`
 
 	a {
 		color: #2e2e2e;
-		background-color: #f8dc3d;
+		background-color: transparent;
 		text-decoration: none;
 	}
 `;
 
 export const StoryMeta = styled.div`
-font-style: italic;
+
+color: #999;
 
 > span:first-child {
     margin-right: 10px;
