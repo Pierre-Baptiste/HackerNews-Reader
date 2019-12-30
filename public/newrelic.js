@@ -9,11 +9,11 @@ exports.config = {
 	/**
 	 * Array of application names.
 	 */
-	app_name: ['hackernewsreader'],
+	app_name: 'hackernewsreader',
 	/**
 	 * Your New Relic license key.
 	 */
-	license_key: '66648ceac1c70f4262b873efaee3c1901d46NRAL',
+	license_key: process.env.NEW_RELIC_LICENSE_KEY,
 	logging: {
 		/**
 		 * Level at which to log. 'trace' is most useful to New Relic when diagnosing
