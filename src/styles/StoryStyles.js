@@ -3,11 +3,6 @@ import styled from 'styled-components';
 export const StoryWrapper = styled.section`
 	padding-top: 10px;
 	margin-bottom: 20px;
-	border-top: 1px solid #cccccc;
-
-	&:first-of-type {
-		border-top: 0;
-	}
 
 	&:last-of-type {
 		margin-bottom: 0;
@@ -31,7 +26,7 @@ export const StoryTitle = styled.h1`
 
 export const StoryMeta = styled.div`
 
-color: #999;
+color: #474350;
 
 > span:first-child {
     margin-right: 10px;

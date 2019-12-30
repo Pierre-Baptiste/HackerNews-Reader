@@ -31,19 +31,44 @@ export const StoriesContainerWrapper = styled.main`
 	padding: 20px 15px;
 	margin: auto;
 
+	.highlight {
+		position: relative;
+		color: #fffd98;
+		background: #fffd98;
+	}
+
+	.highlight:after {
+		content: attr(data-content);
+		position: absolute;
+		color: #000;
+		top: -0.4em;
+		left: 0;
+		width: 100%;
+		height: 80%;
+		background-color: #fff;
+	}
+
+	hr {
+		width: 150px;
+		margin-left: 0;
+		height: 5px;
+		border-top: 2px dotted black;
+		border-bottom: 2px dotted black;
+		border-left: none;
+	}
+
 	#container {
-		color: #999;
+		color: #474350;
 		text-transform: uppercase;
 		font-size: 36px;
 		font-weight: bold;
 		padding-top: 40px;
-		padding-bottom: 70px;
+		padding-bottom: 40px;
 		position: relative;
 		width: 100%;
 		bottom: 45%;
 		display: block;
 		font-family: 'Roboto';
-		text-align: center;
 	}
 
 	#flip {

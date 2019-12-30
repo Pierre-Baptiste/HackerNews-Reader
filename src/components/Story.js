@@ -16,22 +16,29 @@ export const Story = memo(function Story({ storyId }) {
 	}, []);
 
 	return story && story.url ? (
-		<StoryWrapper data-testid='story'>
-			<StoryTitle>
-				<a href={story.url} target='_blank'>
-					{story.title}
-				</a>
-			</StoryTitle>
-			<StoryMeta>
-				<span data-testid='story-by'>
-					<StoryMetaElement color='#999'>By:</StoryMetaElement>{' '}
-					{story.by}
-				</span>
-				<span data-testid='story-time'>
-					<StoryMetaElement color='#999'>Posted:</StoryMetaElement>{' '}
-					{mapTime(story.time)} ago
-				</span>
-			</StoryMeta>
-		</StoryWrapper>
+		<>
+			<StoryWrapper data-testid='story'>
+				<StoryTitle>
+					<a href={story.url} target='_blank'>
+						<span className='highlight' data-content={story.title}>
+							{story.title}
+						</span>
+					</a>
+				</StoryTitle>
+				<StoryMeta>
+					<span data-testid='story-by'>
+						<StoryMetaElement color='#474350'>By:</StoryMetaElement>{' '}
+						{story.by}
+					</span>
+					<span data-testid='story-time'>
+						<StoryMetaElement color='#474350'>
+							Posted:
+						</StoryMetaElement>{' '}
+						{mapTime(story.time)} ago
+					</span>
+				</StoryMeta>
+			</StoryWrapper>
+			<hr />
+		</>
 	) : null;
 });
