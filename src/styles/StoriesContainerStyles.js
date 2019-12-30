@@ -11,8 +11,10 @@ export const GlobalStyle = createGlobalStyle`
             box-sizing: inherit;
   }
   body {
+	position:relative;
     margin: 0;
     padding: 0;
+	padding-bottom:6rem
     line-height: 1;
     color: #202020;
     background-color: #fafafe;
@@ -32,28 +34,21 @@ export const StoriesContainerWrapper = styled.main`
 	margin: auto;
 
 	.highlight {
-		position: relative;
-		color: #fffd98;
-		background: #fffd98;
-	}
-
-	.highlight:after {
-		content: attr(data-content);
-		position: absolute;
-		color: #000;
-		top: -0.4em;
-		left: 0;
-		width: 100%;
-		height: 80%;
-		background-color: #fff;
+		display: inline;
+		padding-bottom: 3px;
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0) 50%,
+			#fffd98 50%
+		);
 	}
 
 	hr {
 		width: 150px;
 		margin-left: 0;
 		height: 5px;
-		border-top: 2px dotted black;
-		border-bottom: 2px dotted black;
+		border-top: 2px dotted #474350;
+		border-bottom: 2px dotted #474350;
 		border-left: none;
 	}
 
@@ -123,5 +118,16 @@ export const StoriesContainerWrapper = styled.main`
 		100% {
 			margin-top: -270px;
 		}
+	}
+
+	.footer {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 1rem;
+		background-color: #efefef;
+		text-align: center;
+		text-decoration: none;
 	}
 `;

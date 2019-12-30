@@ -13,8 +13,8 @@ export const StoryWrapper = styled.section`
 export const StoryTitle = styled.h1`
 	margin-bottom: 5px;
 	font-size: 18px;
-	line-height: 1.8;
-	margin: 0;
+	line-height: 1.3;
+
 	text-decoration: none;
 
 	a {
