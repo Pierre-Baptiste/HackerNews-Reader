@@ -19,7 +19,10 @@ export const Story = memo(function Story({ storyId }) {
 		<>
 			<StoryWrapper data-testid='story'>
 				<StoryTitle>
-					<a href={story.url} target='_blank'>
+					<a
+						href={story.url}
+						target='_blank'
+						rel='noopener noreferrer'>
 						<span className='highlight' data-content={story.title}>
 							{story.title}
 						</span>

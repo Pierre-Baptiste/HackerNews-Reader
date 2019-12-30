@@ -38,8 +38,12 @@ export const StoriesContainer = () => {
 				{storyIds.slice(0, count).map(storyId => (
 					<Story key={storyId} storyId={storyId} />
 				))}
-				<div class='footer'>
-					© Website created with 🦸‍♂️ by{' '}
+				<div className='footer'>
+					© Website created with{' '}
+					<span role='img' aria-label='superman'>
+						🦸‍♂️
+					</span>{' '}
+					by{' '}
 					<a
 						href='https://www.pbdupire.com/'
 						target='_blank'
