@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 	position:relative;
     margin: 0;
     padding: 0;
-	padding-bottom:6rem
+	padding-bottom:3rem
     line-height: 1;
     color: #202020;
     background-color: #fafafe;
